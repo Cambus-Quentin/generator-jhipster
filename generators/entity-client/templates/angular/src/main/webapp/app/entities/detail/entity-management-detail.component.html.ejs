@@ -97,7 +97,10 @@ _%>
 }
 _%>
             </dl>
-
+            <!-- First try with hardcoded value to undertand how to pass value correctly  -->
+            <div>
+                <qr-code [value]="'All QR Code data goes here!'" [size]="150"></qr-code>
+            </div>
             <button type="submit"
                     (click)="previousState()"
                     class="btn btn-info"
